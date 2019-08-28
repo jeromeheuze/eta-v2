@@ -1,5 +1,303 @@
-body {
-  color: #fff;
-  background: #ccc;
+html, body {
+  color: #111;
+  background: #fff;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+}
+.centered {
+  text-align: center;
+}
+
+.quote-box {
+  padding: 2rem 0;
+  margin: 2rem 0;
+  text-align: center;
+  .line {
+    width: 50%;
+    margin: 10px auto;
+    border-top: 1px solid #fff;
+  }
+  p {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2em;
+  }
+  p + p {
+    font-size: 0.8em;
+  }
+}
+
+header {
+  position: fixed;
+  background-color: rgba(17,17,17,0.9);
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  z-index: 10;
+  &.header-cont {
+    .menu {
+      ul {
+        list-style-type: none;
+        padding: 15px 0 0 0;
+        margin: 0;
+        li {
+          display: inline-block;
+          margin-right: 15px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 300;
+            font-size: 0.8em;
+            @media only screen and (min-width: 768px){
+              font-size: 0.7em;
+            }
+            &:link, &:visited { color: #D6DBD9; }
+            &:hover { color: #B5C0B0; }
+            &:active { color: #B5C0B0; }
+          }
+        }
+      }
+    }
+  }
+}
+.banner {
+  display: block;
+  padding-top: 100px;
+  color: #fff;
+  &.full {
+    //height: 580px;
+    padding-bottom: 40px;
+  }
+  &.short {
+    //height: 280px;
+    padding-bottom: 20px;
+  }
+  &.pic {
+    background: url("/img/eta-unsplash.jpg") 50% 50% no-repeat;
+    background-size: cover;
+  }
+  h1.line1, .line1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    @media only screen and (min-width: 768px) and (max-width: 1200px){
+      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 767px){
+      font-size: 2rem;
+    }
+  }
+}
+main {
+  .quote-box {
+    .line {
+      width: 70%;
+      margin-bottom: 2rem;
+      border-top: 1px solid #ddd;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    p + p {
+      font-size: 0.8em;
+    }
+  }
+  .block-goal {
+    .block-cont {
+      padding: 4rem 0;
+      h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.8em;
+        text-transform: uppercase;
+      }
+      h3 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.3em;
+        margin: 3rem 4rem;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .block-about {
+    background-color: #F5F5F5;
+    .block-cont {
+      padding: 4rem 0;
+      h2 {
+        text-align: left;
+        font-weight: 500;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .portrait-cont {
+        .portrait {
+          width: 150px;
+          height: 150px;
+          background: url("/img/daryl_150x150.png") center center no-repeat;
+          background-size: cover;
+          float: right;
+          margin-right: 20px;
+        }
+      }
+
+    }
+  }
+
+  .block-what {
+    .block-cont {
+      padding: 4rem 0;
+
+      h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .x3-boxes {
+        margin-top: 4rem;
+        .icon {
+          width: 64px;
+          height: 64px;
+          margin: 0 auto 2rem auto;
+          &.plan {
+            background: url("/img/icons-1.png") 0 0 no-repeat;
+            background-size: cover;
+          }
+          &.excite {
+            background: url("/img/icons-2.png") 0 0 no-repeat;
+            background-size: cover;
+          }
+          &.solution {
+            background: url("/img/icons-3.png") 0 0 no-repeat;
+            background-size: cover;
+          }
+        }
+        h3 {
+          text-align: center;
+          font-weight: 400;
+          font-size: 1.3em;
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  .block-how {
+    background-color: #F5F5F5;
+    .block-cont {
+      padding: 4rem 0;
+      h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .steps {
+        position: relative;
+        min-height: 70px;
+        padding: 0 1.5rem 1rem 1.5rem;
+        margin: 3rem 0;
+        p {
+          padding-left: 70px;
+        }
+        .icon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 64px;
+          height: 64px;
+          &.one {
+            background: url("/img/icons8-group-of-projects-80.png") 0 0 no-repeat;
+            background-size: cover;
+          }
+          &.two {
+            background: url("/img/icons8-team-64.png") 0 0 no-repeat;
+            background-size: cover;
+          }
+          &.three {
+            background: url("/img/icons8-proactivity-64.png") 0 0 no-repeat;
+            background-size: cover;
+          }
+          &.four {
+            background: url("/img/icons8-inspection-80.png") 0 0 no-repeat;
+            background-size: cover;
+          }
+          &.five {
+            background: url("/img/icons8-intelligence-64.png") 0 0 no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+
+  .block-contact {
+    .block-cont {
+      padding: 4rem 0;
+      h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.8em;
+        text-transform: uppercase;
+      }
+      .block-address {
+        position: relative;
+        width: 400px;
+        margin: 2rem auto;
+        .map {
+          background: url("/img/icons8-map-64.png") 20px 0 no-repeat;
+          .address-cont {
+            text-align: left;
+            padding-left: 100px;
+            p {
+              margin-bottom: 0;
+              font-size: 0.9em;
+            }
+          }
+        }
+        .line {
+          width: 100%;
+          margin: 10px auto;
+          border-top: 1px solid #ccc;
+        }
+
+      }
+      .block-form {
+        width: 80%;
+        margin: 10px auto;
+        .msgSent {
+          display: none;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: #F5F5F5;
+    .block-cont {
+      padding: 4rem 0 0 0;
+    }
+    .copy {
+      padding: 4rem 0 0 0;
+      text-align: center;
+      font-size: 0.8em;
+    }
+  }
 }

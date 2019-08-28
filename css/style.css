@@ -1,3 +1,232 @@
-body {
-  color: #fff;
-  background: #ccc; }
+html, body {
+  color: #111;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word; }
+
+.centered {
+  text-align: center; }
+
+.quote-box {
+  padding: 2rem 0;
+  margin: 2rem 0;
+  text-align: center; }
+  .quote-box .line {
+    width: 50%;
+    margin: 10px auto;
+    border-top: 1px solid #fff; }
+  .quote-box p {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2em; }
+  .quote-box p + p {
+    font-size: 0.8em; }
+
+header {
+  position: fixed;
+  background-color: rgba(17, 17, 17, 0.9);
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  z-index: 10; }
+  header.header-cont .menu ul {
+    list-style-type: none;
+    padding: 15px 0 0 0;
+    margin: 0; }
+    header.header-cont .menu ul li {
+      display: inline-block;
+      margin-right: 15px; }
+      header.header-cont .menu ul li:last-child {
+        margin-right: 0; }
+      header.header-cont .menu ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 300;
+        font-size: 0.8em; }
+        @media only screen and (min-width: 768px) {
+          header.header-cont .menu ul li a {
+            font-size: 0.7em; } }
+        header.header-cont .menu ul li a:link, header.header-cont .menu ul li a:visited {
+          color: #D6DBD9; }
+        header.header-cont .menu ul li a:hover {
+          color: #B5C0B0; }
+        header.header-cont .menu ul li a:active {
+          color: #B5C0B0; }
+
+.banner {
+  display: block;
+  padding-top: 100px;
+  color: #fff; }
+  .banner.full {
+    padding-bottom: 40px; }
+  .banner.short {
+    padding-bottom: 20px; }
+  .banner.pic {
+    background: url("/img/eta-unsplash.jpg") 50% 50% no-repeat;
+    background-size: cover; }
+  .banner h1.line1, .banner .line1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      .banner h1.line1, .banner .line1 {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 767px) {
+      .banner h1.line1, .banner .line1 {
+        font-size: 2rem; } }
+
+main .quote-box .line {
+  width: 70%;
+  margin-bottom: 2rem;
+  border-top: 1px solid #ddd; }
+
+main .quote-box p {
+  font-size: 1.2em; }
+
+main .quote-box p + p {
+  font-size: 0.8em; }
+
+main .block-goal .block-cont {
+  padding: 4rem 0; }
+  main .block-goal .block-cont h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8em;
+    text-transform: uppercase; }
+  main .block-goal .block-cont h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin: 3rem 4rem; }
+  main .block-goal .block-cont p {
+    font-size: 0.9em; }
+
+main .block-about {
+  background-color: #F5F5F5; }
+  main .block-about .block-cont {
+    padding: 4rem 0; }
+    main .block-about .block-cont h2 {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      margin-bottom: 1rem; }
+    main .block-about .block-cont .portrait-cont .portrait {
+      width: 150px;
+      height: 150px;
+      background: url("/img/daryl_150x150.png") center center no-repeat;
+      background-size: cover;
+      float: right;
+      margin-right: 20px; }
+
+main .block-what .block-cont {
+  padding: 4rem 0; }
+  main .block-what .block-cont h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  main .block-what .block-cont .x3-boxes {
+    margin-top: 4rem; }
+    main .block-what .block-cont .x3-boxes .icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 2rem auto; }
+      main .block-what .block-cont .x3-boxes .icon.plan {
+        background: url("/img/icons-1.png") 0 0 no-repeat;
+        background-size: cover; }
+      main .block-what .block-cont .x3-boxes .icon.excite {
+        background: url("/img/icons-2.png") 0 0 no-repeat;
+        background-size: cover; }
+      main .block-what .block-cont .x3-boxes .icon.solution {
+        background: url("/img/icons-3.png") 0 0 no-repeat;
+        background-size: cover; }
+    main .block-what .block-cont .x3-boxes h3 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.3em;
+      text-transform: uppercase;
+      margin-bottom: 1rem; }
+    main .block-what .block-cont .x3-boxes p {
+      font-size: 0.9em; }
+
+main .block-how {
+  background-color: #F5F5F5; }
+  main .block-how .block-cont {
+    padding: 4rem 0; }
+    main .block-how .block-cont h2 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      margin-bottom: 1rem; }
+    main .block-how .block-cont .steps {
+      position: relative;
+      min-height: 70px;
+      padding: 0 1.5rem 1rem 1.5rem;
+      margin: 3rem 0; }
+      main .block-how .block-cont .steps p {
+        padding-left: 70px; }
+      main .block-how .block-cont .steps .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 64px;
+        height: 64px; }
+        main .block-how .block-cont .steps .icon.one {
+          background: url("/img/icons8-group-of-projects-80.png") 0 0 no-repeat;
+          background-size: cover; }
+        main .block-how .block-cont .steps .icon.two {
+          background: url("/img/icons8-team-64.png") 0 0 no-repeat;
+          background-size: cover; }
+        main .block-how .block-cont .steps .icon.three {
+          background: url("/img/icons8-proactivity-64.png") 0 0 no-repeat;
+          background-size: cover; }
+        main .block-how .block-cont .steps .icon.four {
+          background: url("/img/icons8-inspection-80.png") 0 0 no-repeat;
+          background-size: cover; }
+        main .block-how .block-cont .steps .icon.five {
+          background: url("/img/icons8-intelligence-64.png") 0 0 no-repeat;
+          background-size: cover; }
+
+main .block-contact .block-cont {
+  padding: 4rem 0; }
+  main .block-contact .block-cont h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8em;
+    text-transform: uppercase; }
+  main .block-contact .block-cont .block-address {
+    position: relative;
+    width: 400px;
+    margin: 2rem auto; }
+    main .block-contact .block-cont .block-address .map {
+      background: url("/img/icons8-map-64.png") 20px 0 no-repeat; }
+      main .block-contact .block-cont .block-address .map .address-cont {
+        text-align: left;
+        padding-left: 100px; }
+        main .block-contact .block-cont .block-address .map .address-cont p {
+          margin-bottom: 0;
+          font-size: 0.9em; }
+    main .block-contact .block-cont .block-address .line {
+      width: 100%;
+      margin: 10px auto;
+      border-top: 1px solid #ccc; }
+  main .block-contact .block-cont .block-form {
+    width: 80%;
+    margin: 10px auto; }
+    main .block-contact .block-cont .block-form .msgSent {
+      display: none; }
+
+main footer {
+  background-color: #F5F5F5; }
+  main footer .block-cont {
+    padding: 4rem 0 0 0; }
+  main footer .copy {
+    padding: 4rem 0 0 0;
+    text-align: center;
+    font-size: 0.8em; }
