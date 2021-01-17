@@ -79,7 +79,7 @@ header {
     padding-bottom: 20px;
   }
   &.pic {
-    background: url("/img/eta-unsplash.jpg") 50% 50% no-repeat;
+    background: url("/img/tom-gainor-ZqLeQDjY6fY-unsplash-opt.jpg") 50% 50% no-repeat;
     background-size: cover;
   }
   h1.line1, .line1 {
@@ -130,7 +130,10 @@ main {
   }
 
   .block-about {
-    background-color: #F5F5F5;
+    &.pic {
+      background: url("/img/grant-mccurdy-KOKxOB8550Q-unsplash-lighter.jpg") 0 50% no-repeat #fdf8f2;
+      background-size: contain;
+    }
     .block-cont {
       padding: 4rem 0;
       h2 {
@@ -199,7 +202,10 @@ main {
   }
 
   .block-how {
-    background-color: #F5F5F5;
+    &.pic {
+      background: url("/img/thomas-kelley-7B2v9lFn_m0-unsplash-lighter.jpg") 0 0 no-repeat #fdf8f2;
+      background-size: cover;
+    }
     .block-cont {
       padding: 4rem 0;
       h2 {
@@ -249,6 +255,10 @@ main {
   }
 
   .block-contact {
+    &.pic {
+      background: url("/img/scott-webb-GQD3Av_9A88-unsplash.jpg") bottom center no-repeat;
+      background-size: cover;
+    }
     .block-cont {
       padding: 4rem 0;
       h2 {
@@ -290,7 +300,7 @@ main {
   }
 
   footer {
-    background-color: #F5F5F5;
+    background-color: #fdf8f2;
     .block-cont {
       padding: 4rem 0 0 0;
     }

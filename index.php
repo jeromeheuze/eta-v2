@@ -56,7 +56,7 @@ include "./includes/global.php";
         </div>
     </div>
 
-    <div id="about" class="block-about">
+    <div id="about" class="block-about pic">
         <div class="container">
         <div class="row block-cont">
             <div class="col-12 col-md-4 portrait-cont">
@@ -112,7 +112,7 @@ include "./includes/global.php";
         </div>
     </div>
 
-    <div id="how" class="block-how">
+    <div id="how" class="block-how pic">
         <div class="container">
         <div class="row block-cont">
             <div class="col-12"><h2>HOW WE DO IT</h2></div>
@@ -148,7 +148,7 @@ include "./includes/global.php";
         </div>
     </div>
 
-    <div id="contact" class="block-contact">
+    <div id="contact" class="block-contact pic">
         <div class="container">
             <div class="block-cont">
                 <div class="row">

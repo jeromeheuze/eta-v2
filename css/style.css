@@ -65,7 +65,7 @@ header {
   .banner.short {
     padding-bottom: 20px; }
   .banner.pic {
-    background: url("/img/eta-unsplash.jpg") 50% 50% no-repeat;
+    background: url("/img/tom-gainor-ZqLeQDjY6fY-unsplash-opt.jpg") 50% 50% no-repeat;
     background-size: cover; }
   .banner h1.line1, .banner .line1 {
     font-size: 3.5rem;
@@ -104,23 +104,25 @@ main .block-goal .block-cont {
   main .block-goal .block-cont p {
     font-size: 0.9em; }
 
-main .block-about {
-  background-color: #F5F5F5; }
-  main .block-about .block-cont {
-    padding: 4rem 0; }
-    main .block-about .block-cont h2 {
-      text-align: left;
-      font-weight: 500;
-      font-size: 1.8em;
-      text-transform: uppercase;
-      margin-bottom: 1rem; }
-    main .block-about .block-cont .portrait-cont .portrait {
-      width: 150px;
-      height: 150px;
-      background: url("/img/daryl_150x150.png") center center no-repeat;
-      background-size: cover;
-      float: right;
-      margin-right: 20px; }
+main .block-about.pic {
+  background: url("/img/grant-mccurdy-KOKxOB8550Q-unsplash-lighter.jpg") 0 50% no-repeat #fdf8f2;
+  background-size: contain; }
+
+main .block-about .block-cont {
+  padding: 4rem 0; }
+  main .block-about .block-cont h2 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  main .block-about .block-cont .portrait-cont .portrait {
+    width: 150px;
+    height: 150px;
+    background: url("/img/daryl_150x150.png") center center no-repeat;
+    background-size: cover;
+    float: right;
+    margin-right: 20px; }
 
 main .block-what .block-cont {
   padding: 4rem 0; }
@@ -154,44 +156,50 @@ main .block-what .block-cont {
     main .block-what .block-cont .x3-boxes p {
       font-size: 0.9em; }
 
-main .block-how {
-  background-color: #F5F5F5; }
-  main .block-how .block-cont {
-    padding: 4rem 0; }
-    main .block-how .block-cont h2 {
-      text-align: center;
-      font-weight: 500;
-      font-size: 1.8em;
-      text-transform: uppercase;
-      margin-bottom: 1rem; }
-    main .block-how .block-cont .steps {
-      position: relative;
-      min-height: 70px;
-      padding: 0 1.5rem 1rem 1.5rem;
-      margin: 3rem 0; }
-      main .block-how .block-cont .steps p {
-        padding-left: 70px; }
-      main .block-how .block-cont .steps .icon {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 64px;
-        height: 64px; }
-        main .block-how .block-cont .steps .icon.one {
-          background: url("/img/icons8-group-of-projects-80.png") 0 0 no-repeat;
-          background-size: cover; }
-        main .block-how .block-cont .steps .icon.two {
-          background: url("/img/icons8-team-64.png") 0 0 no-repeat;
-          background-size: cover; }
-        main .block-how .block-cont .steps .icon.three {
-          background: url("/img/icons8-proactivity-64.png") 0 0 no-repeat;
-          background-size: cover; }
-        main .block-how .block-cont .steps .icon.four {
-          background: url("/img/icons8-inspection-80.png") 0 0 no-repeat;
-          background-size: cover; }
-        main .block-how .block-cont .steps .icon.five {
-          background: url("/img/icons8-intelligence-64.png") 0 0 no-repeat;
-          background-size: cover; }
+main .block-how.pic {
+  background: url("/img/thomas-kelley-7B2v9lFn_m0-unsplash-lighter.jpg") 0 0 no-repeat #fdf8f2;
+  background-size: cover; }
+
+main .block-how .block-cont {
+  padding: 4rem 0; }
+  main .block-how .block-cont h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  main .block-how .block-cont .steps {
+    position: relative;
+    min-height: 70px;
+    padding: 0 1.5rem 1rem 1.5rem;
+    margin: 3rem 0; }
+    main .block-how .block-cont .steps p {
+      padding-left: 70px; }
+    main .block-how .block-cont .steps .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 64px;
+      height: 64px; }
+      main .block-how .block-cont .steps .icon.one {
+        background: url("/img/icons8-group-of-projects-80.png") 0 0 no-repeat;
+        background-size: cover; }
+      main .block-how .block-cont .steps .icon.two {
+        background: url("/img/icons8-team-64.png") 0 0 no-repeat;
+        background-size: cover; }
+      main .block-how .block-cont .steps .icon.three {
+        background: url("/img/icons8-proactivity-64.png") 0 0 no-repeat;
+        background-size: cover; }
+      main .block-how .block-cont .steps .icon.four {
+        background: url("/img/icons8-inspection-80.png") 0 0 no-repeat;
+        background-size: cover; }
+      main .block-how .block-cont .steps .icon.five {
+        background: url("/img/icons8-intelligence-64.png") 0 0 no-repeat;
+        background-size: cover; }
+
+main .block-contact.pic {
+  background: url("/img/scott-webb-GQD3Av_9A88-unsplash.jpg") bottom center no-repeat;
+  background-size: cover; }
 
 main .block-contact .block-cont {
   padding: 4rem 0; }
@@ -223,7 +231,7 @@ main .block-contact .block-cont {
       display: none; }
 
 main footer {
-  background-color: #F5F5F5; }
+  background-color: #fdf8f2; }
   main footer .block-cont {
     padding: 4rem 0 0 0; }
   main footer .copy {
